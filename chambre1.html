@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gestion des hotels</title>
+    <link rel="stylesheet" href="./personne1.css">
+    <!-- <link rel="stylesheet" href="connection1.php"> -->
+    <link rel="stylesheet" href="./style1.css">
+</head>
+
+
+
+<body>
+
+    <div class="dashboard">
+        <header class="header">
+            <h1>Hotel Admin / Chrambres</h1>
+        </header>
+        <nav class="sidebar">
+            <ul>
+                <li><a href="./index.html">Dashboard</a></li>
+                <li><a href="./chambre1.html" class="active">Chambres</a></li>
+                <li><a href="./personne1.html">Personnes</a></li>
+
+            </ul>
+        </nav>
+        <main class="main-content">
+            <section class="widget">
+
+                <h1 style="text-align: center;">Ajouter une chambre</h1>
+                <form id="ajouterchambre" action="connection1.php" method="post">
+                    <label for="numero">Numero : </label>
+                    <input type="number" name="numero" id="numero" required>
+
+                    <label for="nbre_lits">Nombre de lits : </label>
+                    <input type="number" name="nbre_lits" id="nbre_lits" required>
+
+                    <label for="prix">Prix par nuit : </label>
+                    <input type="text" name="prix" id="prix" required>
+
+                    <label for="id_hotel">Identifiant hotel : </label>
+                    <input type="number" name="id_hotel" id="id_hotel" required>
+
+
+                    <button type="submit" id="ajouter">Ajouter</button>
+                    <button type="reset" class="annuler">Annuler</button>
+                </form>
+                <div id="roomlist"></div>
+
+
+                <!-- on affichera ici la liste des chambres -->
+                <script src="annuler1.js"></script>
+            </section>
+
+            <section class="widget">
+                <h2 style="text-align: center;">La salle d'eau</h2>
+                <form action="salle_eau.php" method="POST">
+                    <p>Veuillez choisir les atouts de votre salle de bain</p>
+                    
+                    <label for="id_salle">Identifiant de la salle: </label>
+                    <input type="number" name="id_salle" id="id_salle" required>
+
+                    <label for="id_hotel">Identifiant de l'hotel :</label>
+                    <input type="number" name="id_hotel" id="id_hotel" required>
+
+
+                    <label for="id_chambre">Identifiant de la chambre :</label>
+                    <input type="number" name="id_chambre" id="id_chambre" required>
+
+
+                    <!-- <marquee behavior="" direction=""><p>   Etes vous un adulte ou un enfant</p></marquee>
+        <label for="age"> Age: </label>
+        <input type="age" name="age" id="age"> -->
+
+
+                    <button type="submit" id="valider">Valider</button>
+                    <button type="reset" class="annuler" >Annuler</button>
+
+                </form>
+                <script src="annuler1.js"></script>
+            </section>
+
+            <section class="widget">
+                <h2  style="text-align: center;">Supprimer une chambre</h2>
+    <form id="supprimer_chambre" action="sprimmer_chambre1.php" method="POST">
+
+
+        <p>veuillez entrez les informations suivantes qui vous permettrons de supprimer la chambre</p>
+
+        <label for="numero">Numero : </label>
+        <input type="number" name="numero" id="numero" required>
+
+
+
+      <label for="id_hotel">Identifiant hotel : </label>
+        <input type="number" name="id_hotel" id="id_hotel" required> <br>
+
+
+        
+    
+        <button type="submit" id="supprimer">Supprimer</button> 
+       <button type="reset" class="annuler">annuler</button>
+       </form>
+       <script src="annuler1.js"></script>
+            </section>
+
+        </main>
+
+    </div>
+    <script src="script1.js"></script>
+</body>
+
+
+</body>
+
+</html>

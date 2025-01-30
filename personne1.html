@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Personne</title>
+    <link rel="stylesheet" href="personne1.css">
+    <link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="personne1.php">
+
+
+</head>
+
+
+<body>
+
+    <div class="dashboard">
+        <header class="header">
+            <h1>Hotel Admin / Personnes</h1>
+        </header>
+        <nav class="sidebar">
+            <ul>
+                <li><a href="./index.html">Dashboard</a></li>
+                <li><a href="./chambre1.html">Chambre</a></li>
+                <li><a href="./personne1.html" class="active">Personnes</a></li>
+
+            </ul>
+        </nav>
+        <main class="main-content">
+            <section class="widget" id="statsWidget">
+                <h2 style="text-align: center;">Formulaire de Personne</h2>
+                <form id="personne_form" action="personne1.php" method="POST">
+                    <label for="id">Identifiant: </label>
+                    <input type="text" name="id" id="id" required>
+
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom" id="nom" required>
+
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom" id="prenom" required>
+
+                    <label for="date_naiss">Date de naissance :</label>
+                    <input type="date" name="date_naiss" id="date_naiss" required>
+
+                    <!-- <marquee behavior="" direction=""><p>   Etes vous un adulte ou un enfant</p></marquee> -->
+
+
+                    <strong>Poste : </strong>
+                    <select name="poste" id="poste" required>
+                        <option value="Directeur">Directeur</option>
+                        <option value="Personnel">Personnel</option>
+                    </select>
+
+
+                    <!-- <input type="radio" name="poste" id="directeur" value="directeur"> <label for="directeur">Directeur</label> <br>
+                    <input type="radio" name="poste" id="personnel" value="personnel"> <label for="personnnel">Personnel</label>
+                    <label for="age"> Age: </label> -->
+                    <!-- <input type="age" name="age" id="age">  -->
+                    <button type="submit" id="valider">Valider</button>
+                    <button type="reset" class="annuler">Annuler</button>
+
+                </form>
+                <script src="personne_annuler1.js"></script>
+            </section>
+
+
+
+
+            <section class="widget">
+
+                <h2 style="text-align: center;">Formulaire de Adulte</h2>
+                <form action="adulte.php" method="POST">
+                    <label for="id">Identifiant: </label>
+                    <input type="numer" name="id" id="id" required>
+
+                    <label for="id_hotel">Identifiant de l'hotel :</label>
+                    <input type="number" name="id_hotel" id="id_hotel" required>
+
+                    <label for="age">Date de naissance :</label>
+                    <input type="date" name="age" id="age">
+
+                    <!-- <marquee behavior="" direction=""><p>   Etes vous un adulte ou un enfant</p></marquee>
+                    <label for="age"> Age: </label>
+                    <input type="age" name="age" id="age"> -->
+                    <button type="submit" id="valider">Valider</button>
+                    <button type="reset" class="annuler">Annuler</button>
+
+                </form>
+                <script src="personne_annuler1.js"></script>
+            </section>
+
+            <section class="widget">
+
+                <h2 style="text-align: center;">Formulaire d'ajout Client</h2>
+                <form id="personne_form" action="client.php" method="POST">
+                    <!-- <label for="id">Identifiant: </label>
+                    <input type="text" name="id" id="id" required> -->
+
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom" id="nom" required>
+
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom" id="prenom" required>
+
+
+                    <strong>Type : </strong>
+                    <select name="type" id="type" required>
+                        <option value="Adulte">Adulte</option>
+                        <option value="Enfant">Enfant</option>
+                    </select>
+
+                    <label for="date_arrive">Date d'arrivée :</label>
+                    <input type="date" name="date_arrive" id="date_arrive" required>
+
+                    <strong>Chambre assignée : </strong>
+                    <select name="chambre_assigne" id="chambre_assigne" required>
+                        <option value="Directeur">chambre standard</option>
+                        <option value="Personnel">Chambre de luxe</option>
+                        <option value="Personnel">suite</option>
+                    </select>
+
+
+                    <!-- <marquee behavior="" direction=""><p>   Etes vous un adulte ou un enfant</p></marquee> -->
+
+                    <!-- <input type="radio" name="poste" id="directeur" value="directeur"> <label for="directeur">Directeur</label> <br>
+            <input type="radio" name="poste" id="personnel" value="personnel"> <label for="personnnel">Personnel</label>
+              <label for="age"> Age: </label> -->
+                    <!-- <input type="age" name="age" id="age">  -->
+                    <button type="submit" id="valider">Valider</button>
+                    <button type="reset" class="annuler">Annuler</button>
+
+                </form>
+                <!-- <script src="personne_annuler1.js"></script> -->
+
+            </section>
+
+
+            <section class="widget">
+                <h2 style="text-align: center;">Formulaire de Enfant</h2>
+                <form action="enfant.php" method="POST">
+                    <label for="id">Identifiant: </label>
+                    <input type="text" name="id" id="id" required>
+
+                    <label for="age">Date de naissance :</label>
+                    <input type="date" name="age" id="age" required>
+
+
+
+                   <marquee behavior="" direction=""><p>   Etes vous un adulte ou un enfant</p></marquee>
+        <label for="age"> Age: </label>
+        <input type="age" name="age" id="age">
+
+
+                    <button type="submit" id="valider">Valider</button>
+                    <button type="reset" class="annuler">Annuler</button>
+
+                </form>
+                <script src="personne_annuler1.js"></script>
+            </section> 
+
+        </main>
+    </div>
+    <script src="script1.js"></script>
+    <script src="validationnaisemp1.js"></script>
+    <script src="personne_annuler1.js"></script>
+</body>
+
+
+</body>
+
+</html>

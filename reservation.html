@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <header>
+            <h1>Réservez Votre Séjour</h1>
+            <p>Planifiez votre expérience exceptionnelle avec nous</p>
+        </header>
+    
+        <nav>
+            <a href="acueil.html">Accueil</a>
+            <a href="chambre.html">Chambres</a>
+            <a href="personnel.html">Personnel</a>
+            <a href="reservation.html">Réservations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    
+        <main>
+            <h2>Formulaire de Réservation</h2>
+<form id="reservationForm" action="reservation.php" method="post">
+    <label for="nom">Nom Complet :</label>
+    <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required>
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+
+    <label for="phone">Téléphone :</label>
+    <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
+
+    <label for="room">Type de Chambre :</label>
+    <select id="room" name="room">
+        <option value="standard">Chambre Standard</option>
+        <option value="deluxe">Chambre De luxe</option>
+        <option value="suite">Suite</option>
+    </select>
+
+    <label for="checkin">Date d'Arrivée :</label>
+    <input type="date" id="checkin" name="checkin" required>
+
+    <label for="checkout">Date de Départ :</label>
+    <input type="date" id="checkout" name="checkout" required>
+
+    
+    <label for="heurearriver">heure d'arriver :</label>
+    <input type="time" id="heurearriver" name="heurearriver" required>
+    
+    <label for="heuredepart">heure de départ :</label>
+    <input type="time" id="heuredepart" name="heuredepart" required>
+
+    <label for="requests">Demandes Particulières :</label>
+    <textarea id="requests" name="requests" rows="4" placeholder="Indiquez vos demandes spéciales"></textarea>
+
+    <button class="reserve-btn" type="submit">Réserver</button>
+</form>
+<p id="successMessage"></p>
+
+
+        </main>
+       
+       
+            
+        <footer>
+            <p>&copy; 2025 Hôtel de Luxe. Tous droits réservés. | <a href="contact.html">Contactez-nous</a></p>
+        </footer>
+      
+           
+
+    </body>
+    
+</body>
+</html>

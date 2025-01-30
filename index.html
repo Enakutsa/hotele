@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <h1>Hotel Admin / Dashboard</h1>
+           
+        </header>
+         <nav class="sidebar">
+            <ul>
+                <li><a href="./index.html" class="active">Dashboard</a></li>
+                <li><a href="./chambre.html">Chambre</a></li>
+                <li><a href="./personne.html">Personnes</a></li>
+
+            </ul>
+        </nav>
+        <main class="main-content">
+            <div id="dashboardContent">
+                <section class="widget" id="statsWidget">
+                    <h2>Statistics Overview</h2>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3>Nombre Total client</h3>
+                            <p id="totalUsers">20</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>Nombre total chambre</h3>
+                            <p id="totalProducts">28</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>Nombre chambre libre</h3>
+                            <p id="totalOrders">8</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

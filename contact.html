@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hôtel de Luxe - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Contactez l'Hôtel de Luxe</h1>
+        <p>Nous sommes là pour répondre à toutes vos questions</p>
+    </header>
+
+        <nav>
+            <a href="acueil.html">Accueil</a>
+            <a href="chambre.html">Chambres</a>
+            <a href="personnel.html">Personnel</a>
+            <a href="reservation.html">Réservations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+       
+    
+
+    <main>
+        <h2>Entrer en Contact</h2>
+        <p>Veuillez remplir le formulaire ci-dessous pour nous envoyer un message. Nous vous répondrons dans les plus brefs délais.</p>
+
+        <form action="contact.php" method="POST">
+            <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+            <input type="number" name="tel" id="tel" placeholder="Votre numero de téléphone" required>
+            <input type="email" name="email" id="email" placeholder="Votre adresse e-mail" required>
+            <textarea name="message" rows="5"  id="message"  placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hôtel de Luxe. Tous droits réservés. | <a href="contact.html">Contactez-nous</a></p>
+    </footer>
+    <script src="server.js"></script>
+</body>
+</html>
