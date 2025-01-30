@@ -21,10 +21,14 @@ if($conn ->connect_error)
 
 
 // recuperer les donnes du formulaire
+$id_client = $conn->real_escape_string($_POST['id_client']);
 $nom = $conn->real_escape_string($_POST['nom']);
 $email = $conn->real_escape_string($_POST['email']);
 $phone = $conn->real_escape_string($_POST['phone']);
+$nombre_personne = $conn->real_escape_string($_POST['nombre_personne']);
 $room = $conn->real_escape_string($_POST['room']);
+$id_chambre = $conn->real_escape_string($_POST['id_chambre']);
+$prix = $conn->real_escape_string($_POST['prix']);
 $datearriver = $conn->real_escape_string($_POST['checkin']);
 $datedepart = $conn->real_escape_string($_POST['checkout']);
 $heurearriver = $conn->real_escape_string($_POST['heurearriver']);
@@ -36,8 +40,8 @@ $requests = $conn->real_escape_string($_POST['requests']);
 
 // recuperation de la requete
 
-$sql = "INSERT INTO resérvation(non, email, tel, type_chambre, date_arriveé, date_depart, heure_arrivé, heure_depart, demande_particulier)  
-values ('$nom', '$email', '$phone', '$room', '$datearriver', '$datedepart', '$heurearriver', '$heuredepart', '$requests')";
+$sql = "INSERT INTO resérvation(id_client, non, email, tel, nombre_personne, type_chambre, id_chambre, prix_total, date_arriveé, date_depart, heure_arrivé, heure_depart, demande_particulier)  
+values ($id_client, '$nom', '$email', '$phone', $nombre_personne, '$room', $id_chambre, $prix, '$datearriver', '$datedepart', '$heurearriver', '$heuredepart', '$requests')";
 
 
 if($conn->query($sql) === TRUE){

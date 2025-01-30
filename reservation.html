@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 <body>
     <body>
@@ -16,7 +20,7 @@
         <nav>
             <a href="acueil.html">Accueil</a>
             <a href="chambre.html">Chambres</a>
-            <a href="personnel.html">Personnel</a>
+            <a href="admin.html">Personnel</a>
             <a href="reservation.html">Réservations</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -24,6 +28,10 @@
         <main>
             <h2>Formulaire de Réservation</h2>
 <form id="reservationForm" action="reservation.php" method="post">
+
+    <label for="id_client">Identifiant du client :</label>
+    <input type="number" id="id_client" name="id_client" placeholder="Identifiant du client" required>
+
     <label for="nom">Nom Complet :</label>
     <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required>
 
@@ -33,12 +41,22 @@
     <label for="phone">Téléphone :</label>
     <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
 
+    <label for="nombre_personne">Nombre de personne :</label>
+    <input type="number" id="nombre_personne" name="nombre_personne" placeholder="Veuillez saisir le nombre de personne" required>
+
     <label for="room">Type de Chambre :</label>
     <select id="room" name="room">
         <option value="standard">Chambre Standard</option>
         <option value="deluxe">Chambre De luxe</option>
         <option value="suite">Suite</option>
     </select>
+
+    <label for="id_chambre">Identifiant de la chambre :</label>
+    <input type="number" id="id_chambre" name="id_chambre" placeholder="Identifiant de la chambre" required>
+
+
+    <label for="prix">Prix de la chambre :</label>
+    <input type="number" id="prix" name="prix" placeholder="prix de la chambre" required>
 
     <label for="checkin">Date d'Arrivée :</label>
     <input type="date" id="checkin" name="checkin" required>
@@ -67,6 +85,16 @@
             
         <footer>
             <p>&copy; 2025 Hôtel de Luxe. Tous droits réservés. | <a href="contact.html">Contactez-nous</a></p>
+        
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://watsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://google.com" target="_blank"><i class="fa-brands fa-google"></i></a>
+             
+            </div>
         </footer>
       
            
@@ -74,4 +102,6 @@
     </body>
     
 </body>
+
+<script src="afficherese.js"></script>
 </html>

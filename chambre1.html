@@ -22,7 +22,9 @@
             <ul>
                 <li><a href="./index.html">Dashboard</a></li>
                 <li><a href="./chambre1.html" class="active">Chambres</a></li>
-                <li><a href="./personne1.html">Personnes</a></li>
+                <li><a href="./admin.html">Personnes</a></li>
+                <li><a href="afiche_reser.php"> <pre style="color:  rgb(236, 161, 111);;">Rapport des reservations</pre></a></li>
+
 
             </ul>
         </nav>
@@ -36,6 +38,13 @@
 
                     <label for="nbre_lits">Nombre de lits : </label>
                     <input type="number" name="nbre_lits" id="nbre_lits" required>
+                    
+                    <label for="type_chambre">Type de Chambre :</label>
+                    <select id="type_chambre" name="type_chambre">
+                        <option value="standard">Chambre Standard</option>
+                        <option value="deluxe">Chambre De luxe</option>
+                        <option value="suite">Suite</option>
+                    </select>
 
                     <label for="prix">Prix par nuit : </label>
                     <input type="text" name="prix" id="prix" required>

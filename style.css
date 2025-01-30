@@ -1,5 +1,6 @@
 /* hotel */
 body {
+   
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -7,6 +8,14 @@ body {
 
     
     
+}
+.logo1{
+    display: flex;
+}
+#lg{
+    margin-left: 15px;
+    border-radius: 100%;
+    height: 40px;
 }
 header{
     background-image: url('image/hotel.jpg');
@@ -142,6 +151,7 @@ main img {
     width: 100%;
     border-radius: 10px;
     transition: all 1s;
+    height: 100%;
 }
 img:hover{
     scale: 0.9;
@@ -501,6 +511,7 @@ footer a {
             padding: 20px 0;
             border-top: 4px solid #D4AF37;
             font-family: 'Times New Roman', Times, serif;
+            margin-top: 100px;
      
        
         }
@@ -601,4 +612,29 @@ body {
         #cart-list li {
             margin: 10px 0;
         }
+        table{
+            margin-left: 20%;
+            border-collapse: collapse;
+
+            
+        }
         
+        td,tr{
+            padding: 5px;
+            border: 2px solid ;
+        }
+
+        .rapport{
+        text-transform: capitalize;
+         text-decoration: underline;
+        }
+        .result{
+           
+            background-color: #f3e2ac;
+         
+        }
+        .resulte{
+            background-color: #ccc;
+        }
+
+  
